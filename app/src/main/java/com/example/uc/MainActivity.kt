@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
             if (inputText != null) {
                 val result = inputText * selectedConversion.conversionFactor
-                binder.resultTV.text = "${inputText} ${selectedConversion.fromUnit} = $result ${selectedConversion.toUnit}"
+                binder.resultTV.text = "$inputText ${selectedConversion.fromUnit} = $result ${selectedConversion.toUnit}"
             } else {
                 binder.resultTV.text = "Input a value."
             }
